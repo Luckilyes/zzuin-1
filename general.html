@@ -86,7 +86,7 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 
 <div id="bak_1" style="text-align:center">
 	<h2>
-		ZzuIn通用版本v1.04
+		ZzuIn通用版本v1.1
 	</h2>
 	<h4>
 		默认留空对应日期：2022.3.3
@@ -103,12 +103,12 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 			</div>
 
 			<div>
-				<label>数字:</label>
+				<label>数字code:</label>
 				<input type="text" name="numcodein" placeholder="仅输入_后数字">
 			</div>
 
 			<div>
-				<label>身份: </label>
+				<label>身份(一般2): </label>
 				<select>
 				    <option value="1">研究生(批准出入校园学生B)</option>
 				    <option value="2">请假被批准的学生</option>
@@ -119,11 +119,11 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 			
 			<div>
 				<label class="ui_button ui_button_primary" for="input"><img src="./static/image/upload.png"></label>
-				<form><input type="file" id="input"  onchange="handleFiles()" style="position:absolute;clip:rect(0 0 0 0);"></form>
+				<form><input type="file" id="input"  onchange="handleFiles()" style="width: 100px;position:absolute;clip:rect(0 0 0 0);"></form>
 			</div>
 			
 			<div>
-				调试：
+				调试(一般正常)：
 				<input type="radio" name="back2skuY" value="back2skuY">调试模式
 				<input type="radio" name="back2skuY" value="back2skuN" checked="checked">正常模式
 			</div>
@@ -145,10 +145,8 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 		
 		<div><br>
         学院默认电气信息学院<br>
-		数字code需要自己获取<br>
-		不知道就留空<br>
-        照片为打卡系统照片<br>
-		在下方链接-【查看照片】查看：<br>
+		数字code需要自己获取,不知道就留空<br>
+        照片为打卡系统照片,在下方链接-【查看照片】查看：<br>
         <span style="text-decoration:underline; color:blue"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/first0">健康打卡系统</a></span>
         <div><br>
 		
