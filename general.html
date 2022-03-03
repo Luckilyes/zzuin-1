@@ -65,8 +65,8 @@ if ((tt1%3)==1){
 <body style="cursor:default;">
 
 <div id="bak_0" style="display: none;">  
-  <div style="WIDTH: 100%; HEIGHT: 102px;background:url(https://jksb.v.zzu.edu.cn/imagesss/title316_74672.png);"><div style="width:100%;height:32px;line-height:32px;text-align:right"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=sB8A418C44FB9451A935B92686B7FD019"><span style="color:#00c;">〖切换账号〗</span></a>　</div></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(https://jksb.v.zzu.edu.cn/images/split5.png)"></div><div style="WIDTH: 100%; min-HEIGHT: 90px;"><div style="width:100%;height:32%;line-height:32px;text-align:left;"><span style="font-size:12px;color:#333;">获取时间：</span><span id="datetimenow" style="font-size:16px;color:#a0a; ">12月31日 20:09      </span><span style="font-size:12px;color:#333;">有效期剩余 </span><span id="tim317" style="font-size:22px;color:#c00;font-weight:500;font-family:黑体;">10分00秒</span></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(https://jksb.v.zzu.edu.cn/images/split5.png)"></div>
-  <div style="width:100%;min-height:25px;line-height:25px;font-size:18px;color:#00c;font-weight:500;font-family:黑体;font-weight:bold;">　<span style="color:#00a" id="collageAndName">信息工程学院　</span><br><span id="door">　通行信息：主校区大门南门.</span><span style="background-color:#070;color:#ff0" id="crk">入口</span><br><span id="m_identity">　出入身份：</span>　<span style="color:#f00" id="tipNoRecord">提醒：未检索到你今天的出校记录</span></div>
+  <div style="WIDTH: 100%; HEIGHT: 102px;background:url(https://jksb.v.zzu.edu.cn/imagesss/bar_jksb.png;" id="numcode"><div style="width:100%;height:32px;line-height:32px;text-align:right"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=sB8A418C44FB9451A935B92686B7FD019"><span style="color:#00c;">〖切换账号〗</span></a>　</div></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(https://jksb.v.zzu.edu.cn/images/split5.png)"></div><div style="WIDTH: 100%; min-HEIGHT: 90px;"><div style="width:100%;height:32%;line-height:32px;text-align:left;"><span style="font-size:12px;color:#333;">获取时间：</span><span id="datetimenow" style="font-size:16px;color:#a0a; ">12月31日 20:09      </span><span style="font-size:12px;color:#333;">有效期剩余 </span><span id="tim317" style="font-size:22px;color:#c00;font-weight:500;font-family:黑体;">10分00秒</span></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(https://jksb.v.zzu.edu.cn/images/split5.png)"></div>
+  <div style="width:100%;min-height:25px;line-height:25px;font-size:18px;color:#00c;font-weight:500;font-family:黑体;font-weight:bold;">　<span style="color:#00a" id="collageAndName">电气信息学院　</span><br><span id="door">　通行信息：主校区大门南门.</span><span style="background-color:#070;color:#ff0" id="crk">入口</span><br><span id="m_identity">　出入身份：</span>　<span style="color:#f00" id="tipNoRecord">提醒：未检索到你今天的出校记录</span></div>
   <div style="width: 100%; height: 25px; background-color: rgb(168, 175, 253);" id="bian92a"></div><div style="width:100%;height:300px;"><div style="width: 25px; height: 100%; background-color: rgb(168, 175, 253); float: left;" id="bian92b1"></div><div style="width:300px;height:100%;float:left;text-align:center;"><img src="./files/test.jpg" style="height:300px;border:0px;"></div><div style="width: 25px; height: 100%; background-color: rgb(168, 175, 253); float: right;" id="bian92b2"></div></div><div style="width: 100%; height: 25px; background-color: rgb(168, 175, 253);" id="bian92c"></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(https://jksb.v.zzu.edu.cn/images/split5.png)"></div><div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
   <div style="width:100%;height:18px;line-height:18px;font-size:12px;color:#666;text-align:center"><span id="msg11">定位：河南省郑州市金水区文化路附近</span>（<span style="color:green">扫码在期望区域内</span>）</div>
 </div>
@@ -87,10 +87,10 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 
 <div id="bak_1" style="text-align:center">
 	<h2>
-		ZzuIn通用版本v0.93
+		ZzuIn通用版本v1.01
 	</h2>
 	<h4>
-		特征码日期：2022.3.3
+		默认留空对应日期：2022.3.3
 	</h4>
 	<form>
 			<div>
@@ -102,6 +102,12 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 				<label>入口:</label>
 				<input type="text" name="password" placeholder="主校区大门X门">
 			</div>
+
+			<div>
+				<label>今日数字code:</label>
+				<input type="text" name="numcodein" placeholder="仅输入_后数字">
+			</div>
+
 			<div>
 				<label>出入身份（一般选2）: </label>
 				<select>
@@ -113,7 +119,7 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 			</div>
 			<div >
 				<label>上传健康打卡照片: </label> 
-                                <input id="input" type="file" onchange="handleFiles()" >
+                <input id="input" type="file" onchange="handleFiles()" >
 			</div>
 			<div>
 				调试模式（非必要请选正常）：
@@ -138,7 +144,7 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 		
 		<div><br>
         学院默认电气信息学院，就别在意那么多了！<br>
-		请检查特征码日期！只有和当前日期相同时才可使用!<br>
+		数字code需要自己获取，获取方法不再赘述。如果你不知道就留空，我随缘会更新(看顶上方日期)<br>
         照片为打卡系统照片，并非二维码！在下方链接-【查看照片】查看：<br>
         <span style="text-decoration:underline; color:blue"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/first0">健康打卡系统</a></span>
         <div><br>
@@ -179,12 +185,19 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 		let a = document.querySelector("input[name='firstname']").value;
 		let b = "电气信息学院"
 		let c = document.querySelector("input[name='password']").value;
-		let d=  "河南省郑州市中原区莲花街附近"
+		let d =  "河南省郑州市中原区莲花街附近"
+		let e = document.querySelector("input[name='numcodein']").value;
 		
 		document.querySelector("span[id='collageAndName']").innerHTML = b+"　"+a;
 		document.querySelector("span[id='door']").innerHTML = "　通行信息："+c+".";
 		document.querySelector("span[id='crk']").innerHTML = "入口";
 		document.querySelector("span[id='msg11']").innerHTML = "定位："+d;
+		if(e == undefined){
+			document.getElementById("numcode").style.background = "url(https://c1n.cn/numcode)";
+		}
+		else{
+			document.getElementById("numcode").style.background = "url("+e+")";
+		}
 		
 		if(document.querySelector("[value='back2skuN']").checked){
 			document.querySelector("span[id='tipNoRecord']").style.display="none";
@@ -212,12 +225,19 @@ document.getElementById("datetimenow").innerHTML = (("0"+(dt.getMonth()+1)).slic
 		let b = "电气信息学院"
 		let c = document.querySelector("input[name='password']").value;
 		let d=  "河南省郑州市中原区莲花街附近"
+		let e = document.querySelector("input[name='numcodein']").value;
 		
 		document.querySelector("span[id='collageAndName']").innerHTML = b+"　"+a;
 		document.querySelector("span[id='door']").innerHTML = "　通行信息："+c+".";
 		document.querySelector("span[id='crk']").innerHTML = "出口";
 		document.querySelector("span[id='msg11']").innerHTML = "定位："+d;
 		document.getElementById('crk').style.backgroundColor="#c0c";
+		if(e == undefined){
+			document.getElementById("numcode").style.background = "url(https://c1n.cn/numcode)";
+		}
+		else{
+			document.getElementById("numcode").style.background = "url("+e+")";
+		}
 		
 		if(document.querySelector("[value='back2skuY']").checked){
 			document.querySelector("span[id='tipNoRecord']").style.display="none";
